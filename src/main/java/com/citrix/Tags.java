@@ -5,16 +5,16 @@ package com.citrix;
  */
 
 @org.kie.api.definition.type.Label("Tags")
-public class Tags implements java.io.Serializable {
+public class Tag implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Tag ID")
+	@org.kie.api.definition.type.Label("Tag ID")
 	private java.lang.String TagID;
-	@org.kie.api.definition.type.Label(value = "Tag Name")
+	@org.kie.api.definition.type.Label("Tag Name")
 	private java.lang.String TagName;
 
-	public Tags() {
+	public Tag() {
 	}
 
 	public java.lang.String getTagID() {
@@ -33,7 +33,7 @@ public class Tags implements java.io.Serializable {
 		this.TagName = TagName;
 	}
 
-	public Tags(java.lang.String TagID, java.lang.String TagName) {
+	public Tag(java.lang.String TagID, java.lang.String TagName) {
 		this.TagID = TagID;
 		this.TagName = TagName;
 	}
