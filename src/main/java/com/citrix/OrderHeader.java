@@ -6,12 +6,266 @@ package com.citrix;
 
 public class OrderHeader implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public OrderHeader() {
-    }
+	@org.kie.api.definition.type.Label("Order Type")
+	private java.lang.String order_Type;
+	@org.kie.api.definition.type.Label("Order ID")
+	private java.lang.String order_ID;
+	@org.kie.api.definition.type.Label("Order Amount")
+	private java.lang.Double order_Amount;
+	@org.kie.api.definition.type.Label("Award Type")
+	private java.lang.String award_Type;
+	@org.kie.api.definition.type.Label("Contract Type")
+	private java.lang.String contract_TYpe;
+	@org.kie.api.definition.type.Label("Contract Level")
+	private java.lang.String contract_Level;
+	@org.kie.api.definition.type.Label("Contract Number")
+	private java.lang.String contract_No;
+	@org.kie.api.definition.type.Label("Order Creation Date")
+	private java.time.LocalDate order_Creation_Date;
+	@org.kie.api.definition.type.Label("Order Matched Date")
+	private java.time.LocalDate order_Matched_Date;
+	@org.kie.api.definition.type.Label("Matched Registration ID")
+	private java.lang.String matched_Registration_ID;
+	@org.kie.api.definition.type.Label("Shared Reward Flag")
+	private java.lang.String shared_Reward_Flag;
+	@org.kie.api.definition.type.Label("New Customer Flag")
+	private java.lang.String new_Customer_Flag;
+	@org.kie.api.definition.type.Label("PO Date")
+	private java.time.LocalDate PO_Date;
+	@org.kie.api.definition.type.Label("PO Number")
+	private java.lang.String PO_Number;
+	@org.kie.api.definition.type.Label("Validation Status")
+	private java.lang.String validation_Status;
+	@org.kie.api.definition.type.Label("Failure Reasons")
+	private java.lang.String failure_Reasons;
 
+	@org.kie.api.definition.type.Label(value = "Total Partner Eligible Amount")
+	private java.lang.Double total_Partner_Eligible_Amount;
 
+	@org.kie.api.definition.type.Label(value = "Total Promo Amount")
+	private java.lang.Double total_Promo_Amount;
 
+	@org.kie.api.definition.type.Label(value = "Total Base Amount")
+	private java.lang.Double total_Base_Amount;
+
+	@org.kie.api.definition.type.Label(value = "OrderDiscounts")
+	private java.lang.Double orderDiscounts;
+
+	@org.kie.api.definition.type.Label(value = "Distribution Channel")
+	private java.lang.String distribution_Channel;
+
+	public OrderHeader() {
+	}
+
+	public java.lang.String getOrder_Type() {
+		return this.order_Type;
+	}
+
+	public void setOrder_Type(java.lang.String order_Type) {
+		this.order_Type = order_Type;
+	}
+
+	public java.lang.String getOrder_ID() {
+		return this.order_ID;
+	}
+
+	public void setOrder_ID(java.lang.String order_ID) {
+		this.order_ID = order_ID;
+	}
+
+	public java.lang.Double getOrder_Amount() {
+		return this.order_Amount;
+	}
+
+	public void setOrder_Amount(java.lang.Double order_Amount) {
+		this.order_Amount = order_Amount;
+	}
+
+	public java.lang.String getAward_Type() {
+		return this.award_Type;
+	}
+
+	public void setAward_Type(java.lang.String award_Type) {
+		this.award_Type = award_Type;
+	}
+
+	public java.lang.String getContract_TYpe() {
+		return this.contract_TYpe;
+	}
+
+	public void setContract_TYpe(java.lang.String contract_TYpe) {
+		this.contract_TYpe = contract_TYpe;
+	}
+
+	public java.lang.String getContract_Level() {
+		return this.contract_Level;
+	}
+
+	public void setContract_Level(java.lang.String contract_Level) {
+		this.contract_Level = contract_Level;
+	}
+
+	public java.lang.String getContract_No() {
+		return this.contract_No;
+	}
+
+	public void setContract_No(java.lang.String contract_No) {
+		this.contract_No = contract_No;
+	}
+
+	public java.time.LocalDate getOrder_Creation_Date() {
+		return this.order_Creation_Date;
+	}
+
+	public void setOrder_Creation_Date(java.time.LocalDate order_Creation_Date) {
+		this.order_Creation_Date = order_Creation_Date;
+	}
+
+	public java.time.LocalDate getOrder_Matched_Date() {
+		return this.order_Matched_Date;
+	}
+
+	public void setOrder_Matched_Date(java.time.LocalDate order_Matched_Date) {
+		this.order_Matched_Date = order_Matched_Date;
+	}
+
+	public java.lang.String getMatched_Registration_ID() {
+		return this.matched_Registration_ID;
+	}
+
+	public void setMatched_Registration_ID(
+			java.lang.String matched_Registration_ID) {
+		this.matched_Registration_ID = matched_Registration_ID;
+	}
+
+	public java.lang.String getShared_Reward_Flag() {
+		return this.shared_Reward_Flag;
+	}
+
+	public void setShared_Reward_Flag(java.lang.String shared_Reward_Flag) {
+		this.shared_Reward_Flag = shared_Reward_Flag;
+	}
+
+	public java.lang.String getNew_Customer_Flag() {
+		return this.new_Customer_Flag;
+	}
+
+	public void setNew_Customer_Flag(java.lang.String new_Customer_Flag) {
+		this.new_Customer_Flag = new_Customer_Flag;
+	}
+
+	public java.time.LocalDate getPO_Date() {
+		return this.PO_Date;
+	}
+
+	public void setPO_Date(java.time.LocalDate PO_Date) {
+		this.PO_Date = PO_Date;
+	}
+
+	public java.lang.String getPO_Number() {
+		return this.PO_Number;
+	}
+
+	public void setPO_Number(java.lang.String PO_Number) {
+		this.PO_Number = PO_Number;
+	}
+
+	public java.lang.String getValidation_Status() {
+		return this.validation_Status;
+	}
+
+	public void setValidation_Status(java.lang.String validation_Status) {
+		this.validation_Status = validation_Status;
+	}
+
+	public java.lang.String getFailure_Reasons() {
+		return this.failure_Reasons;
+	}
+
+	public void setFailure_Reasons(java.lang.String failure_Reasons) {
+		this.failure_Reasons = failure_Reasons;
+	}
+
+	public java.lang.Double getTotal_Partner_Eligible_Amount() {
+		return this.total_Partner_Eligible_Amount;
+	}
+
+	public void setTotal_Partner_Eligible_Amount(
+			java.lang.Double total_Partner_Eligible_Amount) {
+		this.total_Partner_Eligible_Amount = total_Partner_Eligible_Amount;
+	}
+
+	public java.lang.Double getTotal_Promo_Amount() {
+		return this.total_Promo_Amount;
+	}
+
+	public void setTotal_Promo_Amount(java.lang.Double total_Promo_Amount) {
+		this.total_Promo_Amount = total_Promo_Amount;
+	}
+
+	public java.lang.Double getTotal_Base_Amount() {
+		return this.total_Base_Amount;
+	}
+
+	public void setTotal_Base_Amount(java.lang.Double total_Base_Amount) {
+		this.total_Base_Amount = total_Base_Amount;
+	}
+
+	public java.lang.Double getOrderDiscounts() {
+		return this.orderDiscounts;
+	}
+
+	public void setOrderDiscounts(java.lang.Double orderDiscounts) {
+		this.orderDiscounts = orderDiscounts;
+	}
+
+	public java.lang.String getDistribution_Channel() {
+		return this.distribution_Channel;
+	}
+
+	public void setDistribution_Channel(java.lang.String distribution_Channel) {
+		this.distribution_Channel = distribution_Channel;
+	}
+
+	public OrderHeader(java.lang.String order_Type, java.lang.String order_ID,
+			java.lang.Double order_Amount, java.lang.String award_Type,
+			java.lang.String contract_TYpe, java.lang.String contract_Level,
+			java.lang.String contract_No,
+			java.time.LocalDate order_Creation_Date,
+			java.time.LocalDate order_Matched_Date,
+			java.lang.String matched_Registration_ID,
+			java.lang.String shared_Reward_Flag,
+			java.lang.String new_Customer_Flag, java.time.LocalDate PO_Date,
+			java.lang.String PO_Number, java.lang.String validation_Status,
+			java.lang.String failure_Reasons,
+			java.lang.Double total_Partner_Eligible_Amount,
+			java.lang.Double total_Promo_Amount,
+			java.lang.Double total_Base_Amount,
+			java.lang.Double orderDiscounts,
+			java.lang.String distribution_Channel) {
+		this.order_Type = order_Type;
+		this.order_ID = order_ID;
+		this.order_Amount = order_Amount;
+		this.award_Type = award_Type;
+		this.contract_TYpe = contract_TYpe;
+		this.contract_Level = contract_Level;
+		this.contract_No = contract_No;
+		this.order_Creation_Date = order_Creation_Date;
+		this.order_Matched_Date = order_Matched_Date;
+		this.matched_Registration_ID = matched_Registration_ID;
+		this.shared_Reward_Flag = shared_Reward_Flag;
+		this.new_Customer_Flag = new_Customer_Flag;
+		this.PO_Date = PO_Date;
+		this.PO_Number = PO_Number;
+		this.validation_Status = validation_Status;
+		this.failure_Reasons = failure_Reasons;
+		this.total_Partner_Eligible_Amount = total_Partner_Eligible_Amount;
+		this.total_Promo_Amount = total_Promo_Amount;
+		this.total_Base_Amount = total_Base_Amount;
+		this.orderDiscounts = orderDiscounts;
+		this.distribution_Channel = distribution_Channel;
+	}
 
 }
