@@ -6,12 +6,24 @@ package com.citrix;
 
 public class PartnerInfo implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PartnerInfo() {
-    }
+	@org.kie.api.definition.type.Label(value = "Tags")
+	private java.lang.Boolean tags;
 
+	public PartnerInfo() {
+	}
 
+	public java.lang.Boolean getTags() {
+		return this.tags;
+	}
 
+	public void setTags(java.lang.Boolean tags) {
+		this.tags = tags;
+	}
+
+	public PartnerInfo(java.lang.Boolean tags) {
+		this.tags = tags;
+	}
 
 }
