@@ -11,6 +11,39 @@ public class PartnerInfo implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Tags")
 	private Tag tags;
 
+	@org.kie.api.definition.type.Label(value = "Partner Type")
+	private java.lang.String partner_Type;
+
+	@org.kie.api.definition.type.Label(value = "Partner Level")
+	private java.lang.String partner_Level;
+
+	@org.kie.api.definition.type.Label(value = "Partner Status")
+	private java.lang.String partner_Status;
+
+	@org.kie.api.definition.type.Label(value = "Partner Geo")
+	private java.lang.String partner_Geo;
+
+	@org.kie.api.definition.type.Label(value = "Partner Area")
+	private java.lang.String partner_Area;
+
+	@org.kie.api.definition.type.Label(value = "Partner Region")
+	private java.lang.String partner_Region;
+
+	@org.kie.api.definition.type.Label(value = "Partner_Territory")
+	private java.lang.String partner_Territory;
+
+	@org.kie.api.definition.type.Label(value = "Partner Compliance")
+	private java.lang.String partner_Compliance;
+
+	@org.kie.api.definition.type.Label(value = "Partner Membership Start Date")
+	private java.time.LocalDate partner_Mship_Start_Date;
+
+	@org.kie.api.definition.type.Label(value = "Partner Membership End Date")
+	private java.time.LocalDate partner_Mship_End_Date;
+
+	@org.kie.api.definition.type.Label(value = "Partner Membership Inception Date")
+	private java.time.LocalDate partner_Mship_Inception_Date;
+
 	public PartnerInfo() {
 	}
 
@@ -22,8 +55,118 @@ public class PartnerInfo implements java.io.Serializable {
 		this.tags = tags;
 	}
 
-	public PartnerInfo(com.citrix.Tag tags) {
+	public java.lang.String getPartner_Type() {
+		return this.partner_Type;
+	}
+
+	public void setPartner_Type(java.lang.String partner_Type) {
+		this.partner_Type = partner_Type;
+	}
+
+	public java.lang.String getPartner_Level() {
+		return this.partner_Level;
+	}
+
+	public void setPartner_Level(java.lang.String partner_Level) {
+		this.partner_Level = partner_Level;
+	}
+
+	public java.lang.String getPartner_Status() {
+		return this.partner_Status;
+	}
+
+	public void setPartner_Status(java.lang.String partner_Status) {
+		this.partner_Status = partner_Status;
+	}
+
+	public java.lang.String getPartner_Geo() {
+		return this.partner_Geo;
+	}
+
+	public void setPartner_Geo(java.lang.String partner_Geo) {
+		this.partner_Geo = partner_Geo;
+	}
+
+	public java.lang.String getPartner_Area() {
+		return this.partner_Area;
+	}
+
+	public void setPartner_Area(java.lang.String partner_Area) {
+		this.partner_Area = partner_Area;
+	}
+
+	public java.lang.String getPartner_Region() {
+		return this.partner_Region;
+	}
+
+	public void setPartner_Region(java.lang.String partner_Region) {
+		this.partner_Region = partner_Region;
+	}
+
+	public java.lang.String getPartner_Territory() {
+		return this.partner_Territory;
+	}
+
+	public void setPartner_Territory(java.lang.String partner_Territory) {
+		this.partner_Territory = partner_Territory;
+	}
+
+	public java.lang.String getPartner_Compliance() {
+		return this.partner_Compliance;
+	}
+
+	public void setPartner_Compliance(java.lang.String partner_Compliance) {
+		this.partner_Compliance = partner_Compliance;
+	}
+
+	public java.time.LocalDate getPartner_Mship_Start_Date() {
+		return this.partner_Mship_Start_Date;
+	}
+
+	public void setPartner_Mship_Start_Date(
+			java.time.LocalDate partner_Mship_Start_Date) {
+		this.partner_Mship_Start_Date = partner_Mship_Start_Date;
+	}
+
+	public java.time.LocalDate getPartner_Mship_End_Date() {
+		return this.partner_Mship_End_Date;
+	}
+
+	public void setPartner_Mship_End_Date(
+			java.time.LocalDate partner_Mship_End_Date) {
+		this.partner_Mship_End_Date = partner_Mship_End_Date;
+	}
+
+	public java.time.LocalDate getPartner_Mship_Inception_Date() {
+		return this.partner_Mship_Inception_Date;
+	}
+
+	public void setPartner_Mship_Inception_Date(
+			java.time.LocalDate partner_Mship_Inception_Date) {
+		this.partner_Mship_Inception_Date = partner_Mship_Inception_Date;
+	}
+
+	public PartnerInfo(com.citrix.Tag tags, java.lang.String partner_Type,
+			java.lang.String partner_Level, java.lang.String partner_Status,
+			java.lang.String partner_Geo, java.lang.String partner_Area,
+			java.lang.String partner_Region,
+			java.lang.String partner_Territory,
+			java.lang.String partner_Compliance,
+			java.time.LocalDate partner_Mship_Start_Date,
+			java.time.LocalDate partner_Mship_End_Date,
+			java.time.LocalDate partner_Mship_Inception_Date) {
 		this.tags = tags;
+		this.partner_Type = partner_Type;
+		this.partner_Level = partner_Level;
+		this.partner_Status = partner_Status;
+		this.partner_Geo = partner_Geo;
+		this.partner_Area = partner_Area;
+		this.partner_Region = partner_Region;
+		this.partner_Territory = partner_Territory;
+		this.partner_Compliance = partner_Compliance;
+		this.partner_Mship_Start_Date = partner_Mship_Start_Date;
+		this.partner_Mship_End_Date = partner_Mship_End_Date;
+		this.partner_Mship_Inception_Date = partner_Mship_Inception_Date;
 	}
 
 }
