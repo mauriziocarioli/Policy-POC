@@ -10,32 +10,32 @@ public class Tag implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label("Tag ID")
-	private java.lang.String TagID;
+	private java.lang.String tagID;
 	@org.kie.api.definition.type.Label("Tag Name")
-	private java.lang.String TagName;
+	private java.lang.String tagName;
 
 	public Tag() {
 	}
 
-	public java.lang.String getTagID() {
-		return this.TagID;
+	public java.lang.String gettagID() {
+		return this.tagID;
 	}
 
-	public void setTagID(java.lang.String TagID) {
-		this.TagID = TagID;
+	public void settagID(java.lang.String tagID) {
+		this.tagID = tagID;
 	}
 
-	public java.lang.String getTagName() {
-		return this.TagName;
+	public java.lang.String gettagName() {
+		return this.tagName;
 	}
 
-	public void setTagName(java.lang.String TagName) {
-		this.TagName = TagName;
+	public void settagName(java.lang.String tagName) {
+		this.tagName = tagName;
 	}
 
-	public Tag(java.lang.String TagID, java.lang.String TagName) {
-		this.TagID = TagID;
-		this.TagName = TagName;
+	public Tag(java.lang.String tagID, java.lang.String tagName) {
+		this.tagID = tagID;
+		this.tagName = tagName;
 	}
 
 }
