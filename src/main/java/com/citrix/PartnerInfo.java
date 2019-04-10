@@ -8,21 +8,21 @@ public class PartnerInfo implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Tags")
-	private java.lang.Boolean tags;
+	@org.kie.api.definition.type.Label("Tags")
+	private Tag tags;
 
 	public PartnerInfo() {
 	}
 
-	public java.lang.Boolean getTags() {
+	public com.citrix.Tag getTags() {
 		return this.tags;
 	}
 
-	public void setTags(java.lang.Boolean tags) {
+	public void setTags(com.citrix.Tag tags) {
 		this.tags = tags;
 	}
 
-	public PartnerInfo(java.lang.Boolean tags) {
+	public PartnerInfo(com.citrix.Tag tags) {
 		this.tags = tags;
 	}
 
