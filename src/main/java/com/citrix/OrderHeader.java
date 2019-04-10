@@ -30,7 +30,7 @@ public class OrderHeader implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Matched Registration ID")
 	private java.lang.String matched_Registration_ID;
 	@org.kie.api.definition.type.Label("Shared Reward Flag")
-	private java.lang.String shared_Reward_Flag;
+	private Boolean shared_Reward_Flag;
 	@org.kie.api.definition.type.Label("New Customer Flag")
 	private Boolean new_Customer_Flag;
 	@org.kie.api.definition.type.Label("PO Date")
@@ -141,14 +141,6 @@ public class OrderHeader implements java.io.Serializable {
 		this.matched_Registration_ID = matched_Registration_ID;
 	}
 
-	public java.lang.String getShared_Reward_Flag() {
-		return this.shared_Reward_Flag;
-	}
-
-	public void setShared_Reward_Flag(java.lang.String shared_Reward_Flag) {
-		this.shared_Reward_Flag = shared_Reward_Flag;
-	}
-
 	public java.time.LocalDate getPO_Date() {
 		return this.PO_Date;
 	}
@@ -230,6 +222,14 @@ public class OrderHeader implements java.io.Serializable {
 		this.new_Customer_Flag = new_Customer_Flag;
 	}
 
+	public java.lang.Boolean getShared_Reward_Flag() {
+		return this.shared_Reward_Flag;
+	}
+
+	public void setShared_Reward_Flag(java.lang.Boolean shared_Reward_Flag) {
+		this.shared_Reward_Flag = shared_Reward_Flag;
+	}
+
 	public OrderHeader(java.lang.String order_Type, java.lang.String order_ID,
 			java.lang.Double order_Amount, java.lang.String award_Type,
 			java.lang.String contract_TYpe, java.lang.String contract_Level,
@@ -237,7 +237,7 @@ public class OrderHeader implements java.io.Serializable {
 			java.time.LocalDate order_Creation_Date,
 			java.time.LocalDate order_Matched_Date,
 			java.lang.String matched_Registration_ID,
-			java.lang.String shared_Reward_Flag,
+			java.lang.Boolean shared_Reward_Flag,
 			java.lang.Boolean new_Customer_Flag, java.time.LocalDate PO_Date,
 			java.lang.String PO_Number, java.lang.String validation_Status,
 			java.lang.String failure_Reasons,
