@@ -6,12 +6,35 @@ package com.citrix;
 
 public class BREObjectSFDC implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public BREObjectSFDC() {
-    }
+	@org.kie.api.definition.type.Label(value = "Request")
+	private com.citrix.Request request;
+	@org.kie.api.definition.type.Label(value = "Info")
+	private com.citrix.Info info;
 
+	public BREObjectSFDC() {
+	}
 
+	public com.citrix.Request getRequest() {
+		return this.request;
+	}
 
+	public void setRequest(com.citrix.Request request) {
+		this.request = request;
+	}
+
+	public com.citrix.Info getInfo() {
+		return this.info;
+	}
+
+	public void setInfo(com.citrix.Info info) {
+		this.info = info;
+	}
+
+	public BREObjectSFDC(com.citrix.Request request, com.citrix.Info info) {
+		this.request = request;
+		this.info = info;
+	}
 
 }
