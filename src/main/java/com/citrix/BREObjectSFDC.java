@@ -8,10 +8,16 @@ public class BREObjectSFDC implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Request")
+	@org.kie.api.definition.type.Label("Request")
 	private com.citrix.Request request;
-	@org.kie.api.definition.type.Label(value = "Info")
+	@org.kie.api.definition.type.Label("Info")
 	private com.citrix.Info info;
+
+	@org.kie.api.definition.type.Label(value = "Validations")
+	private java.util.List<com.citrix.Validation> validations;
+
+	@org.kie.api.definition.type.Label(value = "Payout")
+	private java.lang.String payout;
 
 	public BREObjectSFDC() {
 	}
@@ -32,9 +38,29 @@ public class BREObjectSFDC implements java.io.Serializable {
 		this.info = info;
 	}
 
-	public BREObjectSFDC(com.citrix.Request request, com.citrix.Info info) {
+	public java.util.List<com.citrix.Validation> getValidations() {
+		return this.validations;
+	}
+
+	public void setValidations(java.util.List<com.citrix.Validation> validations) {
+		this.validations = validations;
+	}
+
+	public java.lang.String getPayout() {
+		return this.payout;
+	}
+
+	public void setPayout(java.lang.String payout) {
+		this.payout = payout;
+	}
+
+	public BREObjectSFDC(com.citrix.Request request, com.citrix.Info info,
+			java.util.List<com.citrix.Validation> validations,
+			java.lang.String payout) {
 		this.request = request;
 		this.info = info;
+		this.validations = validations;
+		this.payout = payout;
 	}
 
 }
