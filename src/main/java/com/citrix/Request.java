@@ -6,12 +6,124 @@ package com.citrix;
 
 public class Request implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Request() {
-    }
+	@org.kie.api.definition.type.Label(value = "Order")
+	private com.citrix.Order order;
+	@org.kie.api.definition.type.Label(value = "Reward Registration")
+	private com.citrix.RewardRegistration rewardRegistration;
+	@org.kie.api.definition.type.Label(value = "Partner Info")
+	private com.citrix.PartnerInfo partnerInfo;
+	@org.kie.api.definition.type.Label(value = "Partner Functions")
+	private com.citrix.PartnerFunctions partnerFunctions;
+	@org.kie.api.definition.type.Label(value = "Original Order")
+	private com.citrix.OriginalOrder originalOrder;
+	@org.kie.api.definition.type.Label(value = "Sales Exceptions")
+	private java.util.List<java.lang.String> salesExceptions;
+	@org.kie.api.definition.type.Label(value = "Product Authorizations")
+	private java.util.List<com.citrix.AuthorizationItem> productAuthorizations;
+	@org.kie.api.definition.type.Label(value = "End User Info")
+	private com.citrix.EndUserInfo endUserInfo;
+	@org.kie.api.definition.type.Label(value = "Specializations")
+	private java.util.List<com.citrix.Specialization> specializations;
 
+	public Request() {
+	}
 
+	public com.citrix.Order getOrder() {
+		return this.order;
+	}
 
+	public void setOrder(com.citrix.Order order) {
+		this.order = order;
+	}
+
+	public com.citrix.RewardRegistration getRewardRegistration() {
+		return this.rewardRegistration;
+	}
+
+	public void setRewardRegistration(
+			com.citrix.RewardRegistration rewardRegistration) {
+		this.rewardRegistration = rewardRegistration;
+	}
+
+	public com.citrix.PartnerInfo getPartnerInfo() {
+		return this.partnerInfo;
+	}
+
+	public void setPartnerInfo(com.citrix.PartnerInfo partnerInfo) {
+		this.partnerInfo = partnerInfo;
+	}
+
+	public com.citrix.PartnerFunctions getPartnerFunctions() {
+		return this.partnerFunctions;
+	}
+
+	public void setPartnerFunctions(com.citrix.PartnerFunctions partnerFunctions) {
+		this.partnerFunctions = partnerFunctions;
+	}
+
+	public com.citrix.OriginalOrder getOriginalOrder() {
+		return this.originalOrder;
+	}
+
+	public void setOriginalOrder(com.citrix.OriginalOrder originalOrder) {
+		this.originalOrder = originalOrder;
+	}
+
+	public java.util.List<java.lang.String> getSalesExceptions() {
+		return this.salesExceptions;
+	}
+
+	public void setSalesExceptions(
+			java.util.List<java.lang.String> salesExceptions) {
+		this.salesExceptions = salesExceptions;
+	}
+
+	public java.util.List<com.citrix.AuthorizationItem> getProductAuthorizations() {
+		return this.productAuthorizations;
+	}
+
+	public void setProductAuthorizations(
+			java.util.List<com.citrix.AuthorizationItem> productAuthorizations) {
+		this.productAuthorizations = productAuthorizations;
+	}
+
+	public com.citrix.EndUserInfo getEndUserInfo() {
+		return this.endUserInfo;
+	}
+
+	public void setEndUserInfo(com.citrix.EndUserInfo endUserInfo) {
+		this.endUserInfo = endUserInfo;
+	}
+
+	public java.util.List<com.citrix.Specialization> getSpecializations() {
+		return this.specializations;
+	}
+
+	public void setSpecializations(
+			java.util.List<com.citrix.Specialization> specializations) {
+		this.specializations = specializations;
+	}
+
+	public Request(com.citrix.Order order,
+			com.citrix.RewardRegistration rewardRegistration,
+			com.citrix.PartnerInfo partnerInfo,
+			com.citrix.PartnerFunctions partnerFunctions,
+			com.citrix.OriginalOrder originalOrder,
+			java.util.List<java.lang.String> salesExceptions,
+			java.util.List<com.citrix.AuthorizationItem> productAuthorizations,
+			com.citrix.EndUserInfo endUserInfo,
+			java.util.List<com.citrix.Specialization> specializations) {
+		this.order = order;
+		this.rewardRegistration = rewardRegistration;
+		this.partnerInfo = partnerInfo;
+		this.partnerFunctions = partnerFunctions;
+		this.originalOrder = originalOrder;
+		this.salesExceptions = salesExceptions;
+		this.productAuthorizations = productAuthorizations;
+		this.endUserInfo = endUserInfo;
+		this.specializations = specializations;
+	}
 
 }
