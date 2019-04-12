@@ -1,4 +1,4 @@
-package com.citrix;
+package com.citrix.policy_poc;
 
 public class Info implements java.io.Serializable {
 

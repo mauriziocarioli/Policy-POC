@@ -1,4 +1,4 @@
-package com.citrix;
+package com.citrix.policy_poc;
 
 public class OriginalOrder implements java.io.Serializable {
 
