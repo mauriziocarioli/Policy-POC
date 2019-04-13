@@ -1,9 +1,6 @@
 package com.citrix.policy_poc;
 
-import com.citrix.policy_poc.*;
 import java.io.Serializable;
-import java.lang.String;
-import java.util.Map;
 
 public class Specialization implements Serializable {
 

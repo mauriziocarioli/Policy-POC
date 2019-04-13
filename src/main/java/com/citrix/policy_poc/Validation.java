@@ -1,9 +1,6 @@
 package com.citrix.policy_poc;
 
-import com.citrix.policy_poc.*;
 import java.io.Serializable;
-import java.lang.String;
-import java.lang.Boolean;
 import java.time.LocalDate;
 
 public class Validation implements Serializable {

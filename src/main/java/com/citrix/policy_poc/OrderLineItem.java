@@ -2,8 +2,6 @@ package com.citrix.policy_poc;
 
 import com.citrix.policy_poc.*;
 import java.io.Serializable;
-import java.lang.String;
-import java.lang.Double;
 
 @org.kie.api.definition.type.Label("Order Line Item")
 public class OrderLineItem implements Serializable {

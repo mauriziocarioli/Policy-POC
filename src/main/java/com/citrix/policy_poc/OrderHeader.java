@@ -2,10 +2,6 @@ package com.citrix.policy_poc;
 
 import com.citrix.policy_poc.*;
 import java.io.Serializable;
-import java.lang.String;
-import java.lang.Double;
-import java.lang.Boolean;
-import java.util.List;
 import java.time.LocalDate;
 
 @org.kie.api.definition.type.Label("Order Header")

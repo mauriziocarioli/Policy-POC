@@ -1,9 +1,6 @@
 package com.citrix.policy_poc;
 
-import com.citrix.policy_poc.*;
 import java.io.Serializable;
-import java.util.List;
-import java.lang.String;
 
 public class Request implements Serializable {
 

@@ -1,8 +1,6 @@
 package com.citrix.policy_poc;
 
-import com.citrix.policy_poc.*;
 import java.io.Serializable;
-import java.lang.String;
 
 @org.kie.api.definition.type.Label("Tag")
 public class Tag implements Serializable {

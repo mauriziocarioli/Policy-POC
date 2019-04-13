@@ -1,6 +1,5 @@
 package com.citrix.policy_poc;
 
-import com.citrix.policy_poc.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 
