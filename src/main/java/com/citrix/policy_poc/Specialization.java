@@ -1,48 +1,53 @@
 package com.citrix.policy_poc;
 
-public class Specialization implements java.io.Serializable {
+import com.citrix.policy_poc.*;
+import java.io.Serializable;
+import java.lang.String;
+import java.util.Map;
+
+public class Specialization implements Serializable {
 
     static final long serialVersionUID = 1L;
     
-	private java.lang.String systemName;
-	private java.lang.String status;
-	private java.lang.String bRE_Status;
-	private java.util.Map<java.lang.String,java.lang.Object> AddData;
+	private String systemName;
+	private String status;
+	private String bRE_Status;
+	private Map<String,Object> AddData;
 
 
-    public java.lang.String getSystemName() {
+    public String getSystemName() {
         return this.systemName;
     }
 
-    public void setSystemName(java.lang.String systemName) {
+    public void setSystemName(String systemName) {
         this.systemName = systemName;
     }
 
-    public java.lang.String getStatus() {
+    public String getStatus() {
         return this.status;
     }
 
-    public void setStatus(java.lang.String status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public java.lang.String getBRE_Status() {
+    public String getBRE_Status() {
         return this.bRE_Status;
     }
 
-    public void setBRE_Status(java.lang.String bRE_Status) {
+    public void setBRE_Status(String bRE_Status) {
         this.bRE_Status = bRE_Status;
     }
 
-    public java.util.Map<java.lang.String,java.lang.Object> getAddData() {
+    public Map<String,Object> getAddData() {
         return this.AddData;
     }
 
-    public void setAddData(java.util.Map<java.lang.String,java.lang.Object> AddData) {
+    public void setAddData(Map<String,Object> AddData) {
         this.AddData = AddData;
     }
 
-    public Specialization(java.lang.String systemName, java.lang.String status, java.lang.String bRE_Status, java.util.Map<java.lang.String,java.lang.Object> AddData) {
+    public Specialization(String systemName, String status, String bRE_Status, Map<String,Object> AddData) {
         this.systemName = systemName;
         this.status = status;
         this.bRE_Status = bRE_Status;
