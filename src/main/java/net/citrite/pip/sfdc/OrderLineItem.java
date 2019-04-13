@@ -1,6 +1,5 @@
 package net.citrite.pip.sfdc;
 
-import com.citrix.policy_poc.*;
 import java.io.Serializable;
 
 @org.kie.api.definition.type.Label("Order Line Item")
