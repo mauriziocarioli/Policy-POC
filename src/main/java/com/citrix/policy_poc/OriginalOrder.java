@@ -5,7 +5,8 @@ import java.time.LocalDate;
 
 public class OriginalOrder implements Serializable {
 
-    
+    private static final long serialVersionUID = 6004403973882986618L;
+       
     private LocalDate creation_Date;
     private LocalDate pO_Date;
     private LocalDate document_Date;

@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Request implements Serializable {
 
-
+	private static final long serialVersionUID = -1524280697031891812L;
+	
 	@org.kie.api.definition.type.Label(value = "Order")
 	private Order order;
 	@org.kie.api.definition.type.Label(value = "Reward Registration")

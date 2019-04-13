@@ -5,7 +5,8 @@ import java.time.LocalDate;
 
 public class RewardRegistration implements Serializable {
 
-
+	private static final long serialVersionUID = -1528041913511392459L;
+	
 	@org.kie.api.definition.type.Label(value = "Registration_ID")
 	private String registration_ID;
 	@org.kie.api.definition.type.Label(value = "Incentive Type")

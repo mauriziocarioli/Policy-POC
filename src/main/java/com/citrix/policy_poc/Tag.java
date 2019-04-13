@@ -5,7 +5,8 @@ import java.io.Serializable;
 @org.kie.api.definition.type.Label("Tag")
 public class Tag implements Serializable {
 
-
+	private static final long serialVersionUID = -6150082296946535613L;
+	
 	@org.kie.api.definition.type.Label("Tag ID")
 	private String tagID;
 	@org.kie.api.definition.type.Label("Tag Name")

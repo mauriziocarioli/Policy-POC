@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 public class EndUserInfo implements Serializable {
 
-   
+    private static final long serialVersionUID = -5755168015286412137L;
+       
     private String end_User_Org_ID;
     private String end_User_Geo;
     private String end_User_Area;

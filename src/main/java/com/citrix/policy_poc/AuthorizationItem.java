@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 public class AuthorizationItem implements Serializable {
 
-    
+    private static final long serialVersionUID = -1653744350499309189L;
+        
     private String product_Line_ID;
     private String cert_Status;
 

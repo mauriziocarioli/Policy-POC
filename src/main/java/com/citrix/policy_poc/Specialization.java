@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class Specialization implements Serializable {
 
-    
+    private static final long serialVersionUID = -9184570138321925886L;
+        
 	private String systemName;
 	private String status;
 	private String bRE_Status;

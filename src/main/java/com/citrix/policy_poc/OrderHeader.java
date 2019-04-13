@@ -7,7 +7,8 @@ import java.time.LocalDate;
 @org.kie.api.definition.type.Label("Order Header")
 public class OrderHeader implements Serializable {
 
-
+	private static final long serialVersionUID = -1296275024467763333L;
+	
 	@org.kie.api.definition.type.Label("Order Type")
 	private String order_Type;
 	@org.kie.api.definition.type.Label("Order ID")
