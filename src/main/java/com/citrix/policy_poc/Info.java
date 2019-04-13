@@ -1,8 +1,8 @@
 package com.citrix.policy_poc;
 
-import com.citrix.policy_poc.*;
+//import com.citrix.policy_poc.*;
 import java.io.Serializable;
-import java.lang.String;
+//import java.lang.String;
 import java.time.LocalDate;
 
 public class Info implements Serializable {

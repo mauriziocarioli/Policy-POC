@@ -25,7 +25,10 @@
       <import>
         <type>java.util.ArrayList</type>
       </import>
-    </imports>
+      <import>
+         <type>java.time.LocalDate</type>
+      </import>
+</imports>
   </imports>
   <version>1.0</version>
 </configuration>
