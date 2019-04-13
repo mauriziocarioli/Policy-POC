@@ -1,4 +1,4 @@
-package com.citrix.policy_poc;
+package net.citrite.pip.sfdc;
 
 import com.citrix.policy_poc.*;
 import java.io.Serializable;

@@ -1,7 +1,10 @@
-package com.citrix.policy_poc;
+package net.citrite.pip.canonical.bre;
 
 import java.io.Serializable;
 import java.util.List;
+import net.citrite.pip.bre.Validation;
+import net.citrite.pip.sfdc.Request;
+import net.citrite.pip.sfdc.Info;
 
 public class BREObjectSFDC implements Serializable {
 

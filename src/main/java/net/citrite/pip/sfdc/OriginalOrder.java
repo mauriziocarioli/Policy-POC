@@ -1,4 +1,4 @@
-package com.citrix.policy_poc;
+package net.citrite.pip.sfdc;
 
 import java.io.Serializable;
 import java.time.LocalDate;

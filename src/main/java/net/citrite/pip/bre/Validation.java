@@ -1,4 +1,4 @@
-package com.citrix.policy_poc;
+package net.citrite.pip.bre;
 
 import java.io.Serializable;
 import java.time.LocalDate;

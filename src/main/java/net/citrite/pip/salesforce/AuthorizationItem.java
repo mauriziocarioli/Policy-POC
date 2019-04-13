@@ -1,4 +1,4 @@
-package com.citrix.policy_poc;
+package net.citrite.pip.salesforce;
 
 import java.io.Serializable;
 
