@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class Validation implements Serializable {
 
-    static final long serialVersionUID = 1L;
     
     private String checkName;
     private LocalDate checkDate;

@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class Info implements Serializable {
 
-    static final long serialVersionUID = 1L;
     
     private LocalDate request_DateTime;
     private LocalDate response_DateTime;

@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class PartnerInfo implements Serializable {
 
-	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label("Tags")
 	private Tag tags;

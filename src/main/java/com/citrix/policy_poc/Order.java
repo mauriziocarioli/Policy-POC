@@ -6,7 +6,6 @@ import java.util.List;
 @org.kie.api.definition.type.Label("Order")
 public class Order implements Serializable {
 
-	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label("Order Header")
 	private OrderHeader orderHeader;

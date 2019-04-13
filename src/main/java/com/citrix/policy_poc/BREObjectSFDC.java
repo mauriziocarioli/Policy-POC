@@ -5,7 +5,6 @@ import java.util.List;
 
 public class BREObjectSFDC implements Serializable {
 
-	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label("Request")
 	private Request request;

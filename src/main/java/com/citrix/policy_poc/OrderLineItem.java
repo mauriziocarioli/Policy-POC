@@ -6,7 +6,6 @@ import java.io.Serializable;
 @org.kie.api.definition.type.Label("Order Line Item")
 public class OrderLineItem implements Serializable {
 
-	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label(value = "Order ID")
 	private String order_ID;

@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class PartnerFunctions implements Serializable {
 
-	static final long serialVersionUID = 1L;
 
     private String billTo_Partner_Name;
     private String billTo_Address_Line1;
