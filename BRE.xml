@@ -35,7 +35,7 @@
                 <PO_Date>2019-02-15T00:00:00</PO_Date>
                 <PO_Number>test_NFD_SMB_02</PO_Number>
                 <Valdidation_Status>null</Valdidation_Status>
-                <Failure_Reasons  />
+                <Failure_Reasons   />
                 <Total_Partner_Eligible_Amount>0.0</Total_Partner_Eligible_Amount>
                 <Total_Promo_Amount>0.0</Total_Promo_Amount>
                 <Total_Base_Amount>0.0</Total_Base_Amount>
@@ -376,6 +376,18 @@ cook.com</End_User_Email_Address>
                             </Specialization>
                         </ns15:Specializations>
                     </ns0:Request>
+                    <Validations  Status="VALID" xmlns="urn:schemas-citrite-net:pip:bre:validations:1">
+                        <Validation  xmlns="">
+                            <CheckName>Minimum Order Amount Requirement Unmet</CheckName>
+                            <CheckDate>2019-02-19T10:42:15.3465419-05:00</CheckDate>
+                            <CheckResult>FAIL</CheckResult>
+                            <Header>true</Header>
+                            <OrderID>0002541033</OrderID>
+                            <CheckType>EXCEPTION</CheckType>
+                            <MergedStatus>false</MergedStatus>
+                        </Validation>
+                    </Validations>
+                    <Payout  xsi:nil="true" xmlns="urn:schemas-citrite-net:pip:bre:payout:1" />
                     <ns3:Info>
                         <Request_DateTime>2019-02-15T09:54:01</Request_DateTime>
                         <Response_DateTime>2019-02-15T09:54:01</Response_DateTime>

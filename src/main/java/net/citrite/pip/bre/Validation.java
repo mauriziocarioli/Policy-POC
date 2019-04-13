@@ -7,78 +7,86 @@ public class Validation implements Serializable {
 
     private static final long serialVersionUID = -4509823521117930083L;
         
-    private String checkName;
-    private LocalDate checkDate;
-    private String checkResult;
-    private Boolean header;
-    private String orderID;
-    private String checkType;
-    private Boolean mergedStatus;
+    private String CheckName;
+    private LocalDate CheckDate;
+    private String CheckResult;
+    private Boolean Header;
+    private String OrderID;
+    private String CheckType;
+    private Boolean MergedStatus;
 
     public String getCheckName() {
-        return this.checkName;
+        return this.CheckName;
     }
 
-    public void setCheckName(String checkName) {
-        this.checkName = checkName;
+    public void setCheckName(String CheckName) {
+        this.CheckName = CheckName;
     }
 
     public LocalDate getCheckDate() {
-        return this.checkDate;
+        return this.CheckDate;
     }
 
-    public void setCheckDate(LocalDate checkDate) {
-        this.checkDate = checkDate;
+    public void setCheckDate(LocalDate CheckDate) {
+        this.CheckDate = CheckDate;
     }
 
     public String getCheckResult() {
-        return this.checkResult;
+        return this.CheckResult;
     }
 
-    public void setCheckResult(String checkResult) {
-        this.checkResult = checkResult;
+    public void setCheckResult(String CheckResult) {
+        this.CheckResult = CheckResult;
+    }
+
+    public Boolean isHeader() {
+        return this.Header;
     }
 
     public Boolean getHeader() {
-        return this.header;
+        return this.Header;
     }
 
-    public void setHeader(Boolean header) {
-        this.header = header;
+    public void setHeader(Boolean Header) {
+        this.Header = Header;
     }
 
     public String getOrderID() {
-        return this.orderID;
+        return this.OrderID;
     }
 
-    public void setOrderID(String orderID) {
-        this.orderID = orderID;
+    public void setOrderID(String OrderID) {
+        this.OrderID = OrderID;
     }
 
     public String getCheckType() {
-        return this.checkType;
+        return this.CheckType;
     }
 
-    public void setCheckType(String checkType) {
-        this.checkType = checkType;
+    public void setCheckType(String CheckType) {
+        this.CheckType = CheckType;
+    }
+
+    public Boolean isMergedStatus() {
+        return this.MergedStatus;
     }
 
     public Boolean getMergedStatus() {
-        return this.mergedStatus;
+        return this.MergedStatus;
     }
 
-    public void setMergedStatus(Boolean mergedStatus) {
-        this.mergedStatus = mergedStatus;
+    public void setMergedStatus(Boolean MergedStatus) {
+        this.MergedStatus = MergedStatus;
     }
 
-    public Validation(String checkName, LocalDate checkDate, String checkResult, Boolean header, String orderID, String checkType, Boolean mergedStatus) {
-        this.checkName = checkName;
-        this.checkDate = checkDate;
-        this.checkResult = checkResult;
-        this.header = header;
-        this.orderID = orderID;
-        this.checkType = checkType;
-        this.mergedStatus = mergedStatus;
+    public Validation(String CheckName, LocalDate CheckDate, String CheckResult, Boolean Header, String OrderID, String CheckType, Boolean MergedStatus) {
+        this.CheckName = CheckName;
+        this.CheckDate = CheckDate;
+        this.CheckResult = CheckResult;
+        this.Header = Header;
+        this.OrderID = OrderID;
+        this.CheckType = CheckType;
+        this.MergedStatus = MergedStatus;
     }
 
 }
