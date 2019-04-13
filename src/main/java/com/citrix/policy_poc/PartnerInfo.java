@@ -1,4 +1,4 @@
-package com.citrix.policy_poc;
+package policy_poc;
 
 import com.citrix.policy_poc.*;
 import java.io.Serializable;
@@ -37,11 +37,11 @@ public class PartnerInfo implements Serializable {
 	public PartnerInfo() {
 	}
 
-	public com.citrix.Tag getTags() {
+	public Tag getTags() {
 		return this.tags;
 	}
 
-	public void setTags(com.citrix.Tag tags) {
+	public void setTags(Tag tags) {
 		this.tags = tags;
 	}
 
@@ -136,7 +136,7 @@ public class PartnerInfo implements Serializable {
 		this.partner_Mship_Inception_Date = partner_Mship_Inception_Date;
 	}
 
-	public PartnerInfo(com.citrix.Tag tags, String partner_Type,
+	public PartnerInfo(Tag tags, String partner_Type,
 			String partner_Level, String partner_Status,
 			String partner_Geo, String partner_Area,
 			String partner_Region,
