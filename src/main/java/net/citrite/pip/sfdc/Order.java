@@ -9,34 +9,32 @@ public class Order implements Serializable {
 	private static final long serialVersionUID = 6810510455129323181L;
 	
 	@org.kie.api.definition.type.Label("Order Header")
-	private OrderHeader orderHeader;
+	private OrderHeader OrderHeader;
 	@org.kie.api.definition.type.Label("Order Line Items")
-	private List<OrderLineItem> orderLineItems;
-
-	public Order() {
-	}
+	private List<OrderLineItem> OrderLineItems;
 
 	public OrderHeader getOrderHeader() {
-		return this.orderHeader;
+		return this.OrderHeader;
 	}
 
-	public void setOrderHeader(OrderHeader orderHeader) {
-		this.orderHeader = orderHeader;
+	public void setOrderHeader(OrderHeader OrderHeader) {
+		this.OrderHeader = OrderHeader;
 	}
 
 	public List<OrderLineItem> getOrderLineItems() {
-		return this.orderLineItems;
+		return this.OrderLineItems;
 	}
 
-	public void setOrderLineItems(
-			List<OrderLineItem> orderLineItems) {
-		this.orderLineItems = orderLineItems;
+	public void setOrderLineItems(List<OrderLineItem> OrderLineItems) {
+		this.OrderLineItems = OrderLineItems;
 	}
 
-	public Order(OrderHeader orderHeader,
-			List<OrderLineItem> orderLineItems) {
-		this.orderHeader = orderHeader;
-		this.orderLineItems = orderLineItems;
+	public Order(OrderHeader OrderHeader, List<OrderLineItem> OrderLineItems) {
+		this.OrderHeader = OrderHeader;
+		this.OrderLineItems = OrderLineItems;
+	}
+
+	public Order() {
 	}
 
 }

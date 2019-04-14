@@ -10,121 +10,109 @@ public class Request implements Serializable {
 	private static final long serialVersionUID = -1524280697031891812L;
 	
 	@org.kie.api.definition.type.Label(value = "Order")
-	private Order order;
+	private Order Order;
 	@org.kie.api.definition.type.Label(value = "Reward Registration")
-	private RewardRegistration rewardRegistration;
+	private RewardRegistration RewardRegistration;
 	@org.kie.api.definition.type.Label(value = "Partner Info")
-	private PartnerInfo partnerInfo;
+	private PartnerInfo PartnerInfo;
 	@org.kie.api.definition.type.Label(value = "Partner Functions")
-	private PartnerFunctions partnerFunctions;
+	private PartnerFunctions PartnerFunctions;
 	@org.kie.api.definition.type.Label(value = "Original Order")
-	private OriginalOrder originalOrder;
+	private OriginalOrder OriginalOrder;
 	@org.kie.api.definition.type.Label(value = "Sales Exceptions")
-	private List<String> salesExceptions;
+	private List<String> SalesExceptions;
 	@org.kie.api.definition.type.Label(value = "Product Authorizations")
-	private List<AuthorizationItem> productAuthorizations;
+	private List<AuthorizationItem> ProductAuthorizations;
 	@org.kie.api.definition.type.Label(value = "End User Info")
-	private EndUserInfo endUserInfo;
+	private EndUserInfo EndUserInfo;
 	@org.kie.api.definition.type.Label(value = "Specializations")
-	private List<Specialization> specializations;
-
-	public Request() {
-	}
+	private List<Specialization> Specializations;
 
 	public Order getOrder() {
-		return this.order;
+		return this.Order;
 	}
 
-	public void setOrder(Order order) {
-		this.order = order;
+	public void setOrder(Order Order) {
+		this.Order = Order;
 	}
 
 	public RewardRegistration getRewardRegistration() {
-		return this.rewardRegistration;
+		return this.RewardRegistration;
 	}
 
-	public void setRewardRegistration(
-			RewardRegistration rewardRegistration) {
-		this.rewardRegistration = rewardRegistration;
+	public void setRewardRegistration(RewardRegistration RewardRegistration) {
+		this.RewardRegistration = RewardRegistration;
 	}
 
 	public PartnerInfo getPartnerInfo() {
-		return this.partnerInfo;
+		return this.PartnerInfo;
 	}
 
-	public void setPartnerInfo(PartnerInfo partnerInfo) {
-		this.partnerInfo = partnerInfo;
+	public void setPartnerInfo(PartnerInfo PartnerInfo) {
+		this.PartnerInfo = PartnerInfo;
 	}
 
 	public PartnerFunctions getPartnerFunctions() {
-		return this.partnerFunctions;
+		return this.PartnerFunctions;
 	}
 
-	public void setPartnerFunctions(PartnerFunctions partnerFunctions) {
-		this.partnerFunctions = partnerFunctions;
+	public void setPartnerFunctions(PartnerFunctions PartnerFunctions) {
+		this.PartnerFunctions = PartnerFunctions;
 	}
 
 	public OriginalOrder getOriginalOrder() {
-		return this.originalOrder;
+		return this.OriginalOrder;
 	}
 
-	public void setOriginalOrder(OriginalOrder originalOrder) {
-		this.originalOrder = originalOrder;
+	public void setOriginalOrder(OriginalOrder OriginalOrder) {
+		this.OriginalOrder = OriginalOrder;
 	}
 
 	public List<String> getSalesExceptions() {
-		return this.salesExceptions;
+		return this.SalesExceptions;
 	}
 
-	public void setSalesExceptions(
-			List<String> salesExceptions) {
-		this.salesExceptions = salesExceptions;
+	public void setSalesExceptions(List<String> SalesExceptions) {
+		this.SalesExceptions = SalesExceptions;
 	}
 
 	public List<AuthorizationItem> getProductAuthorizations() {
-		return this.productAuthorizations;
+		return this.ProductAuthorizations;
 	}
 
-	public void setProductAuthorizations(
-			List<AuthorizationItem> productAuthorizations) {
-		this.productAuthorizations = productAuthorizations;
+	public void setProductAuthorizations(List<AuthorizationItem> ProductAuthorizations) {
+		this.ProductAuthorizations = ProductAuthorizations;
 	}
 
 	public EndUserInfo getEndUserInfo() {
-		return this.endUserInfo;
+		return this.EndUserInfo;
 	}
 
-	public void setEndUserInfo(EndUserInfo endUserInfo) {
-		this.endUserInfo = endUserInfo;
+	public void setEndUserInfo(EndUserInfo EndUserInfo) {
+		this.EndUserInfo = EndUserInfo;
 	}
 
 	public List<Specialization> getSpecializations() {
-		return this.specializations;
+		return this.Specializations;
 	}
 
-	public void setSpecializations(
-			List<Specialization> specializations) {
-		this.specializations = specializations;
+	public void setSpecializations(List<Specialization> Specializations) {
+		this.Specializations = Specializations;
 	}
 
-	public Request(Order order,
-			RewardRegistration rewardRegistration,
-			PartnerInfo partnerInfo,
-			PartnerFunctions partnerFunctions,
-			OriginalOrder originalOrder,
-			List<String> salesExceptions,
-			List<AuthorizationItem> productAuthorizations,
-			EndUserInfo endUserInfo,
-			List<Specialization> specializations) {
-		this.order = order;
-		this.rewardRegistration = rewardRegistration;
-		this.partnerInfo = partnerInfo;
-		this.partnerFunctions = partnerFunctions;
-		this.originalOrder = originalOrder;
-		this.salesExceptions = salesExceptions;
-		this.productAuthorizations = productAuthorizations;
-		this.endUserInfo = endUserInfo;
-		this.specializations = specializations;
+	public Request(Order Order, RewardRegistration RewardRegistration, PartnerInfo PartnerInfo, PartnerFunctions PartnerFunctions, OriginalOrder OriginalOrder, List<String> SalesExceptions, List<AuthorizationItem> ProductAuthorizations, EndUserInfo EndUserInfo, List<Specialization> Specializations) {
+		this.Order = Order;
+		this.RewardRegistration = RewardRegistration;
+		this.PartnerInfo = PartnerInfo;
+		this.PartnerFunctions = PartnerFunctions;
+		this.OriginalOrder = OriginalOrder;
+		this.SalesExceptions = SalesExceptions;
+		this.ProductAuthorizations = ProductAuthorizations;
+		this.EndUserInfo = EndUserInfo;
+		this.Specializations = Specializations;
+	}
+
+	public Request() {
 	}
 
 }

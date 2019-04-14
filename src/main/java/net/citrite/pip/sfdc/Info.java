@@ -7,58 +7,61 @@ public class Info implements Serializable {
 
     private static final long serialVersionUID = 6967915924242214318L;
         
-    private LocalDate request_DateTime;
-    private LocalDate response_DateTime;
-    private String status;
-    private String interaction_Id;
-    private String source;
+    private LocalDate Request_DateTime;
+    private LocalDate Response_DateTime;
+    private String Status;
+    private String Interaction_Id;
+    private String Source;
 
     public LocalDate getRequest_DateTime() {
-        return this.request_DateTime;
+        return this.Request_DateTime;
     }
 
-    public void setRequest_DateTime(LocalDate request_DateTime) {
-        this.request_DateTime = request_DateTime;
+    public void setRequest_DateTime(LocalDate Request_DateTime) {
+        this.Request_DateTime = Request_DateTime;
     }
 
     public LocalDate getResponse_DateTime() {
-        return this.response_DateTime;
+        return this.Response_DateTime;
     }
 
-    public void setResponse_DateTime(LocalDate response_DateTime) {
-        this.response_DateTime = response_DateTime;
+    public void setResponse_DateTime(LocalDate Response_DateTime) {
+        this.Response_DateTime = Response_DateTime;
     }
 
     public String getStatus() {
-        return this.status;
+        return this.Status;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setStatus(String Status) {
+        this.Status = Status;
     }
 
     public String getInteraction_Id() {
-        return this.interaction_Id;
+        return this.Interaction_Id;
     }
 
-    public void setInteraction_Id(String interaction_Id) {
-        this.interaction_Id = interaction_Id;
+    public void setInteraction_Id(String Interaction_Id) {
+        this.Interaction_Id = Interaction_Id;
     }
 
     public String getSource() {
-        return this.source;
+        return this.Source;
     }
 
-    public void setSource(String source) {
-        this.source = source;
+    public void setSource(String Source) {
+        this.Source = Source;
     }
 
-    public Info(LocalDate request_DateTime, LocalDate response_DateTime, String status, String interaction_Id, String source) {
-        this.request_DateTime = request_DateTime;
-        this.response_DateTime = response_DateTime;
-        this.status = status;
-        this.interaction_Id = interaction_Id;
-        this.source = source;
+    public Info(LocalDate Request_DateTime, LocalDate Response_DateTime, String Status, String Interaction_Id, String Source) {
+        this.Request_DateTime = Request_DateTime;
+        this.Response_DateTime = Response_DateTime;
+        this.Status = Status;
+        this.Interaction_Id = Interaction_Id;
+        this.Source = Source;
     }
 
+    public Info() {
+    }
+ 
 }

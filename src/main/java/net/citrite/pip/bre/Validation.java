@@ -89,4 +89,7 @@ public class Validation implements Serializable {
         this.MergedStatus = MergedStatus;
     }
 
+    public Validation() {
+    }
+
 }

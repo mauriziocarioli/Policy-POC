@@ -7,38 +7,41 @@ public class OriginalOrder implements Serializable {
 
     private static final long serialVersionUID = 6004403973882986618L;
        
-    private LocalDate creation_Date;
-    private LocalDate pO_Date;
-    private LocalDate document_Date;
+    private LocalDate Creation_Date;
+    private LocalDate PO_Date;
+    private LocalDate Document_Date;
 
     public LocalDate getCreation_Date() {
-        return this.creation_Date;
+        return this.Creation_Date;
     }
 
-    public void setCreation_Date(LocalDate creation_Date) {
-        this.creation_Date = creation_Date;
+    public void setCreation_Date(LocalDate Creation_Date) {
+        this.Creation_Date = Creation_Date;
     }
 
     public LocalDate getPO_Date() {
-        return this.pO_Date;
+        return this.PO_Date;
     }
 
-    public void setPO_Date(LocalDate pO_Date) {
-        this.pO_Date = pO_Date;
+    public void setPO_Date(LocalDate PO_Date) {
+        this.PO_Date = PO_Date;
     }
 
     public LocalDate getDocument_Date() {
-        return this.document_Date;
+        return this.Document_Date;
     }
 
-    public void setDocument_Date(LocalDate document_Date) {
-        this.document_Date = document_Date;
+    public void setDocument_Date(LocalDate Document_Date) {
+        this.Document_Date = Document_Date;
     }
 
-    public OriginalOrder(LocalDate creation_Date, LocalDate pO_Date, LocalDate document_Date) {
-        this.creation_Date = creation_Date;
-        this.pO_Date = pO_Date;
-        this.document_Date = document_Date;
+    public OriginalOrder(LocalDate Creation_Date, LocalDate PO_Date, LocalDate Document_Date) {
+        this.Creation_Date = Creation_Date;
+        this.PO_Date = PO_Date;
+        this.Document_Date = Document_Date;
+    }
+
+    public OriginalOrder() {
     }
 
 }

@@ -7,34 +7,33 @@ public class Specialization implements Serializable {
 
     private static final long serialVersionUID = -9184570138321925886L;
         
-	private String systemName;
-	private String status;
-	private String bRE_Status;
+	private String SystemName;
+	private String Status;
+	private String BRE_Status;
 	private Map<String,Object> AddData;
 
-
     public String getSystemName() {
-        return this.systemName;
+        return this.SystemName;
     }
 
-    public void setSystemName(String systemName) {
-        this.systemName = systemName;
+    public void setSystemName(String SystemName) {
+        this.SystemName = SystemName;
     }
 
     public String getStatus() {
-        return this.status;
+        return this.Status;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setStatus(String Status) {
+        this.Status = Status;
     }
 
     public String getBRE_Status() {
-        return this.bRE_Status;
+        return this.BRE_Status;
     }
 
-    public void setBRE_Status(String bRE_Status) {
-        this.bRE_Status = bRE_Status;
+    public void setBRE_Status(String BRE_Status) {
+        this.BRE_Status = BRE_Status;
     }
 
     public Map<String,Object> getAddData() {
@@ -45,11 +44,14 @@ public class Specialization implements Serializable {
         this.AddData = AddData;
     }
 
-    public Specialization(String systemName, String status, String bRE_Status, Map<String,Object> AddData) {
-        this.systemName = systemName;
-        this.status = status;
-        this.bRE_Status = bRE_Status;
+    public Specialization(String SystemName, String Status, String BRE_Status, Map<String,Object> AddData) {
+        this.SystemName = SystemName;
+        this.Status = Status;
+        this.BRE_Status = BRE_Status;
         this.AddData = AddData;
+    }
+
+    public Specialization() {
     }
 
 }

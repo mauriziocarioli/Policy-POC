@@ -11,56 +11,54 @@ public class BREObjectSFDC implements Serializable {
 	private static final long serialVersionUID = 5484795051075805077L;
 	
 	@org.kie.api.definition.type.Label("Request")
-	private Request request;
+	private Request Request;
 	@org.kie.api.definition.type.Label("Info")
-	private Info info;
+	private Info Info;
 	@org.kie.api.definition.type.Label(value = "Validations")
-	private List<Validation> validations;
+	private List<Validation> Validations;
 	@org.kie.api.definition.type.Label(value = "Payout")
-	private String payout;
-
-	public BREObjectSFDC() {
-	}
+	private String Payout;
 
 	public Request getRequest() {
-		return this.request;
+		return this.Request;
 	}
 
-	public void setRequest(Request request) {
-		this.request = request;
+	public void setRequest(Request Request) {
+		this.Request = Request;
 	}
 
 	public Info getInfo() {
-		return this.info;
+		return this.Info;
 	}
 
-	public void setInfo(Info info) {
-		this.info = info;
+	public void setInfo(Info Info) {
+		this.Info = Info;
 	}
 
 	public List<Validation> getValidations() {
-		return this.validations;
+		return this.Validations;
 	}
 
-	public void setValidations(List<Validation> validations) {
-		this.validations = validations;
+	public void setValidations(List<Validation> Validations) {
+		this.Validations = Validations;
 	}
 
 	public String getPayout() {
-		return this.payout;
+		return this.Payout;
 	}
 
-	public void setPayout(String payout) {
-		this.payout = payout;
+	public void setPayout(String Payout) {
+		this.Payout = Payout;
 	}
 
-	public BREObjectSFDC(Request request, Info info,
-			List<Validation> validations,
-			String payout) {
-		this.request = request;
-		this.info = info;
-		this.validations = validations;
-		this.payout = payout;
+	public BREObjectSFDC(Request Request, Info Info, List<Validation> Validations, String Payout) {
+		this.Request = Request;
+		this.Info = Info;
+		this.Validations = Validations;
+		this.Payout = Payout;
+	}
+
+	public BREObjectSFDC() {
 	}
 
 }
